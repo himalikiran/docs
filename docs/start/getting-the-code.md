@@ -83,6 +83,34 @@ Bower removes the hassle of dependency management when developing or consuming
 elements. When you install a component, Bower makes sure any dependencies are
 installed as well. 
 
+### Installing with Bower in Ubuntu 14.04
+
+To install polymer with bower in ubuntu 14.04 following instructions will be useful:
+
+Install npm
+  $sudo apt-get install npm
+
+Install Nodejs
+  $sudo apt-get install nodejs-legacy (nodejs does not work in ubuntu 14.04 for bower)
+
+Install bower
+  $Sudo npm install -g bower
+
+Create bower.json
+  $bower init
+
+Install polymer
+  $bower install polymer --save
+  $bower install polymer/core-components --save
+  $bower install polymer/paper-elements --save
+  
+If you want to use google apis and more google webcomponents use following instructions:
+  $bower install PolymerLabs/google_apis --save
+  $bower install PolymerLabs/google-map --save
+  $bower install PolymerLabs/speech -mic --save
+  
+Go to http://googlewebcomponents.github.io/ for more webcomponents referance.
+
 #### Project setup
 
 If you haven't created a `bower.json` file for your application, run this
